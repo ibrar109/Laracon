@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
+    <!-- <link href="/dist/output.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Laracon</title>
 </head>
 <body class="antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900">
@@ -35,7 +36,7 @@
                 </div>
             </dl>
             <div class="mt-4 cursor-pointer">
-                <a class="bg-slate-900 font-semibold text-white p-2 rounded-lg  lg:absolute right-11">Go to Websites<span aria-hidden="true">→</span></a>
+                <a class="bg-slate-900 font-semibold text-white p-2 rounded-lg sm:hidden lg:block md:block lg:absolute right-11">Go to Websites<span aria-hidden="true">→</span></a>
             </div>
          </div>
          <div class="ml-14">
@@ -54,19 +55,147 @@
                 <p>The Speakers section on the Laracon Online website.</p>
             </div>
         </figcaption>
-        <div class="bg-gray-200 flex mt-24">
-            <!-- <div class="flex"> -->
-          <div class="rounded-lg  m-14">
-            <img src="/resources/about.webp" class=" rounded-lg ring-1 ring-gray-300" alt="">
-          </div>
-          <div class="rounded-lg m-14 ">
-            <img src="/resources/pre-party.webp" class=" rounded-lg ring-1 ring-gray-300" alt="">
-          </div>
-          <div class="rounded-lg m-14 ">
-            <img src="/resources/schedule.webp" class=" rounded-lg ring-1 ring-gray-300" alt="">
-          </div>
-        <!-- </div> -->
-    </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 bg-gray-100 pt-10">
+            <div class="col-span-1 sm:col-span-2 lg:col-span-1 rounded-lg bg-white m-4">
+                <card class="bg-white rounded-lg ">
+                    <img src="/resources/card_1-removebg-preview.png" class="w-full" alt="">
+                    <!-- Your content for the first card -->
+                    <img src="/resources/about-removebg-preview.png" alt="" class="px-24">
+                    <p class="font-semibold text-black text-[24px] text-center p-5 w-96">The largest Laravel event of the year streaming September 14th <img src="/resources/YouTube-Logo.wine.svg" class="w-[100px] h-[50px] inline" alt="">on</p>
+                    <p class="p-5 w-96">Once again we'll be streaming Laracon for free on YouTube allowing us to reach the entire Laravel community. A huge "THANK YOU" to our incredible partners for helping us achieve this!</p>
+                    <p class="p-5 w-96"><b>All talks are brand new,</b> never before presented at any Laracon and delivered live during the event. We have 18 amazing speakers lined up including a keynote from Taylor Otwell on the state of Laravel and what's new in Laravel.</p>
+                    <img src="/resources/image-removebg-preview.png" alt="">
+                </card>
+            </div>
+            <div class="col-span-1 sm:col-span-1 lg:col-span-1 rounded-lg bg-white m-4">
+                <card class="bg-white rounded">
+                    <img src="/resources/image-removebg-preview.png" class="w-full p-10" alt="">
+                    <!-- Your content for the second card -->
+                    <!-- <img src="/resources/about-removebg-preview.png" alt=""> -->
+                    <p class="font-bold text-black text-[16px] p-5 ">Tune in the official pre-party no other than the dynamo duo @freekmurze and @christophrumpel to warm-up the crowd.</p>
+                    <p class="p-5 w-96 text-center">Join us on September the 13th let's discuss the upcoming event.</p>
+                    <a href="https://www.youtube.com/watch?v=8XVI_Zrvz3c&pp=ygUGY29kaW5n" class=""><img src="/resources/imagaga.png" poster=""></a>
+                    <img src="/resources/button.png" class="px-12" alt="">
+                    <p class="text-center font-semibold text-black text-[20px] p-1">The heads/><br>
+                        that brought this website to your browser</p>
+                    <div class="flex px-24 items-center">
+                    <div>
+                    <img src="/resources/ganja-1.png" class="inline-block" alt="">
+                    </div>
+                    <div>
+                    <img src="/resources/ganja-2.png" alt="">
+                    </div>
+                    </div>
+                    <p class="font-bold text-black text-center">@caneco @flicknelson</p>
+                </card>
+            </div>
+            <div class="col-span-1 sm:col-span-1 lg:col-span-1 rounded-lg bg-white m-4">
+                <card class="bg-white rounded-lg ">
+                    <img src="/resources/schedule (2).png" class="px-24 pt-10" alt="">
+                    <!-- Your content for the third card -->
+                    <!-- <img src="/resources/about-removebg-preview.png" alt=""> -->
+                    <p class="font-semibold text-black  text-center p-5 m-2 ">8 smooth-pace talks from a wide variety of topics and 10 lightning talks to charge- up your skills.</p>
+                    <div>
+                            <table class="ml-10">
+                            <tr class="my-10 p-64">
+                                <td class="my-10">
+                                    <P class="font-bold text-black mr-10">1:45pm &nbsp;</P>
+                                </td>
+                                <td class="border-l-2">&nbsp;&nbsp;LARACON_INIT;</td>
+                            </tr>
+                            <tr class=" rounded ">
+                                <td>
+                                    <div class="">
+                                  <P class="font-bold text-black mr-10">2:00PM</P>
+                                   </div>
+                                </td>
+                                <td class="">
+                                    <div class="border-l-2 mt-14 ">
+                                        <h3 class="font-bold text-[18px] text-black">&nbsp;&nbsp;Not Quite My Type</h3>
+                                        <p class="text-gray-400 font-semibold">&nbsp;&nbsp;by kai sassnowski</p>
+                                        &nbsp;<button class="bg-red-500 text-white pt-0 pb-0 pr-2 pl-2 m-0.5 rounded-lg">Talk</button>
+                                    </div>
+                                </td>
+                            </tr>
+    
+                            <tr class=" rounded ">
+                                <td>
+                                    <div class="">
+                                  <P class="font-bold text-black mr-10">2:40PM</P>
+                                   </div>
+                                </td>
+                                <td class="">
+                                    <div class="border-l-2 mt-14 ">
+                                        <h3 class="font-bold text-[18px] text-black">&nbsp;&nbsp;Kubernetes and Laravel</h3>
+                                        <p class="text-gray-400 font-semibold">&nbsp;&nbsp;by Bosun Egbrinde</p>
+                                        &nbsp;<button class="bg-red-500 text-white pt-0 pb-0 pr-2 pl-2 m-0.5 rounded-lg">Talk</button>
+                                    </div>
+                                </td>
+                            </tr>
+    
+                            <tr class=" rounded ">
+                                <td>
+                                    <div class="">
+                                  <P class="font-bold text-black mr-10">3:20PM</P>
+                                   </div>
+                                </td>
+                                <td class="">
+                                    <div class="border-l-2 mt-14 ">
+                                        <h3 class="font-bold text-[18px] text-black">&nbsp;&nbsp;The Future Livewire</h3>
+                                        <p class="text-gray-400 font-semibold">&nbsp;&nbsp;The Caleb porzio</p>
+                                        &nbsp;<button class="bg-red-500 text-white pt-0 pb-0 pr-2 pl-2 m-0.5 rounded-lg">Talk</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="pt-64 rounded ">
+                                <td>
+                                    <div class="">
+                                  <P class="font-bold text-black mr-10">4:20PM</P>
+                                   </div>
+                                </td>
+                                <td class="">
+                                    <div class="border-l-2 mt-4 ">
+                                        <p class="text-gray-400 font-semibold">&nbsp;&nbsp;Break;</p>
+                                    </div>
+                                </td>
+                            </tr>
+    
+                            <tr class=" rounded ">
+                                <td>
+                                    <div class="">
+                                  <P class="font-bold text-black mr-10">4:20PM</P>
+                                   </div>
+                                </td>
+                                <td class="">
+                                    <div class="border-l-2 mt-14 ">
+                                        <h3 class="font-bold text-[18px] text-black">&nbsp;&nbsp;Sustainable Self-Care</h3>
+                                        <p class="text-gray-400 font-semibold">&nbsp;&nbsp;By Marje Holmstorn-Sabo</p>
+                                        &nbsp;<button class="bg-yellow-400 text-white pt-0 pb-0 pr-2 pl-2 m-0.5 rounded-lg font-medium">Lightning Talk</button>
+                                    </div>
+                                </td>
+                            </tr>
+    
+                            <tr class="rounded">
+                                <td>
+                                    <div class="">
+                                  <P class="font-bold text-black mr-0 ">4:35PM</P>
+                                   </div>
+                                </td>
+                                <td class="">
+                                    
+                                    <div class="border-l-2 mt-14  rounded-lg">
+                                        <h3 class="font-bold text-[18px] text-black">&nbsp;&nbsp;Lets Get Physical:</h3>
+                                        <p class="font-bold text-[18px] text-black">&nbsp;&nbsp;Database Inertnal<br>&nbsp;&nbsp;and You</p>
+                                        <!-- &nbsp;<button class="bg-yellow-400 text-white pt-0 pb-0 pr-2 pl-2 m-0.5 rounded-lg font-medium">Lightning Talk</button> -->
+                                    </div>
+                                </td>
+                            </tr>
+                            </table>
+                        </div>
+                </card>
+            </div>
+        </div>
+    
     <div>
         <figcaption class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-0 2xl:max-w-8xl">
             <div class="-ml-px pt-4 pl-4 sm:pt-6 sm:pl-6 border-l border-slate-200 text-sm leading-6 text-slate-600 dark:border-slate-700 dark:text-slate-400">
@@ -90,5 +219,6 @@
         <p class="text-slate-900 dark:text-white h-4 w-auto mx-auto text-center mb-24">© 2023 Tailwind Labs Inc. All rights reserved.</p>
     </div>
     </div>
-</body>
+    </body>
 </html>
+

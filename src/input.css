@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body {
-    background-image: url(/resources/background.avif);
-    background-repeat:no-repeat;
+
+button {
+    /* background-image: url(/resources/button.png); */
+}
+.bord {
+border: 1px solid black;
 }
